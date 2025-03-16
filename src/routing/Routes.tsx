@@ -1,12 +1,12 @@
 import { Route, Routes } from 'react-router-dom';
 
-import { HomeExample } from '../views/HomeExample';
 import { routePaths } from './index';
+import { Home } from '../views/Home';
 
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path={routePaths.HOME} element={<HomeExample />} />
+      <Route path={routePaths.HOME} element={<Home />} />
     </Routes>
   );
 };
