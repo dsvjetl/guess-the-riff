@@ -6,10 +6,11 @@ const Header = () => {
     <header>
       <Typography
         variant={'h1'}
+        fontWeight={'normal'}
         align={'center'}
         fontSize={50}
-        color={colorTheme.palette.primaryCustom.light}
         bgcolor={colorTheme.palette.primary.dark}
+        color={colorTheme.palette.primaryCustom.light}
         p={1}
       >
         Guess the Riff! 🎸

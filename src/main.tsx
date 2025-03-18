@@ -9,6 +9,7 @@ import { runMockServer } from './mocks/server';
 import './index.scss';
 import store from './store';
 import { Header } from './shared/components/Header';
+import App from './App';
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ runMockServer().then(() => {
         <QueryClientProvider client={queryClient}>
           <Provider store={store}>
             <Header />
+            <App />
           </Provider>
           <ReactQueryDevtools initialIsOpen={true} />
         </QueryClientProvider>
