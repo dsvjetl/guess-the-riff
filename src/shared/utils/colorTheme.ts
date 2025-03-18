@@ -1,5 +1,14 @@
 import { createTheme } from '@mui/material/styles';
 
+declare module '@mui/material/styles' {
+  interface Palette {
+    primaryCustom: Palette['primary'];
+  }
+  interface PaletteOptions {
+    primaryCustom: PaletteOptions['primary'];
+  }
+}
+
 const colorTheme = createTheme({
   palette: {
     primary: {
@@ -13,6 +22,12 @@ const colorTheme = createTheme({
       main: '#f44336',
       dark: '#ba000d',
       contrastText: '#000',
+    },
+    primaryCustom: {
+      light: '#7378c4',
+      main: '#789012',
+      dark: '#456789',
+      contrastText: '#fff',
     },
   },
 });
